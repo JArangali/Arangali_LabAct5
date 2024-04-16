@@ -1,38 +1,112 @@
-.App {
+body {
+  background-color: #e3d9f8;
+  font-family: Arial, sans-serif;
+}
+
+.Header {
+  background-color: #4b2e83;
+  color: white;
   text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header h1 {
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header h2 {
+  font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.darker-input {
+  background-color: #4b2e83;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.darker-button {
+  background-color: white;
+  color: #4b2e83;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.todo {
+  background-color: #4b2e83;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item {
+  margin: 0;
+}
+
+.delete-btn {
+  background-color: white;
+  color: #4b2e83;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.check-btn {
+  background-color: white;
+  color: #4b2e83;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#myUnOrdList {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+select {
+  background-color: #4b2e83;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #6b4d9f;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select:hover {
+  background-color: #6b4d9f;
+  color: white;
 }
